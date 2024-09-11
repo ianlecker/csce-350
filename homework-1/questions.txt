@@ -1,0 +1,31 @@
+HW 1 - CSCE350
+
+Q1
+Left is top of stack, right is bottom, stack is s, s = [] at start
+1. push(a) s=[a]
+2. pop() return a, s=[]
+3. push(b) s=[b]
+4. push(c) s=[c,b]
+5. pop() return c, s=[b]
+6. push(d) s=[d,b]
+7. pop() return d, s=[b]
+8. push(e) s=[e,b]
+9. pop() return e, s=[b]
+10. pop(), return b, s=[b] FINAL
+
+Q2
+Left is front of queue, right is end, queue is q, q = [] at start
+1. enqueue(a) q=[a]
+2. enqueue(b) q=[a,b]
+3. dequeue() return a, q=[b]
+4. enqueue(c) q=[b,c]
+5. enqueue(d) q=[b,c,d]
+6. enqueue(e) q=[b,c,d,e]
+7. dequeue() return b, q=[c,d,e]
+8. dequeue() return c, q=[d,e]
+9. enqueue(f) 1=[d,e,f] FINAL
+
+Q3
+See question-3.cpp
+
+Q4
