@@ -72,7 +72,7 @@ public:
 private:
     Node* root = nullptr;
 
-    // inserts a node into the bst
+    // logic for inserting a node
     Node* insert(Node* node, int entry) {
         if(!node) return new Node(entry); // Case: no root node
         if(entry < node->value) { // Case: entry is less than the root, or current node
@@ -87,7 +87,7 @@ private:
         return node;
     }
 
-    // searches for a node in the bst
+    // logic for deleting a node
     bool search(Node* node, int entry) {
         if(!node) return false; // Case: node not found
 
@@ -102,6 +102,7 @@ private:
         }
     }
 
+    // logic for deleting a node
     Node* deleteNode(Node* node, int entry) {
         if(!node) return nullptr; // Case: node not found
 
